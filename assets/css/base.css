@@ -30,6 +30,18 @@ html{
   display: flex;
   flex-wrap: wrap;
 }
+/* tesst */
+.grid__column-2{
+  padding-left: 12px;
+  padding-right: 12px;
+  width: 16.6667%px;
+}
+.grid__column-10{
+  padding-left: 12px;
+  padding-right: 12px;
+  width: 83.3334%px;
+}
+
 /* animiton */
 @keyframes fadeIn {
   from {
