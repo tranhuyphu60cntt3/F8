@@ -93,3 +93,41 @@ html{
   cursor: default;
   color: #949494;
 }
+
+/* selection */
+.select-input{
+  position: relative;
+  min-width: 200px;
+  height: 34px;
+  padding: 0 12px;
+  border-radius: 2px;
+  background-color: var(--write-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.select-input:hover .select-input__list{
+  display: block;
+}
+.select-input__list{
+  position: absolute;
+  top: 1;
+  right: 0;
+  top: 25px;
+  border-radius: 2px;
+  padding: 10px 16px;
+  list-style: none;
+  background-color: var(--write-color);
+  display: none;
+}
+.select-input__link{
+  font-size: 1.4rem;
+  color: var(--text-color);
+  text-decoration: none;
+  display: block;
+  padding: 5px 0;
+}
+.select-input__link:hover{
+  color: var(--primary-color);
+}

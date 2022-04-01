@@ -815,4 +815,33 @@
   color: var(--primary-color);
 }
 
-/* home */
+/* home sort + filter */
+.home-filter{
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 12px 22px;
+  border-radius: 2px;
+  background-color: rgb(0, 0, 0,0.1);
+}
+.home-filter__label{
+  font-size: 1.4rem;
+  color: #555555;
+}
+.home-filter__page{
+  display: flex;
+  align-items: center;
+}
+.home-filter__btn{
+  margin-right: 12px;
+}
+.select-input__label{
+  font-size: 1.4rem;
+}
+.select-input__icon{
+  color: rgb(131, 131, 131);
+  font-size: 1.4rem;
+  margin: 0 16px 0 18px;
+  position: relative;
+  top: 1px;
+}
