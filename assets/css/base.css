@@ -29,17 +29,24 @@ html{
 .grid__row{
   display: flex;
   flex-wrap: wrap;
+  margin-left: -5px;
+  margin-right: -5px;
 }
 /* tesst */
 .grid__column-2{
-  padding-left: 12px;
-  padding-right: 12px;
-  width: 16.6667%px;
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 16.6667%;
+}
+.grid__column-2-4{
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 20%;
 }
 .grid__column-10{
-  padding-left: 12px;
-  padding-right: 12px;
-  width: 83.3334%px;
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 83.3334%;
 }
 
 /* animiton */
@@ -112,7 +119,7 @@ html{
 }
 .select-input__list{
   position: absolute;
-  top: 1;
+  left: 0;
   right: 0;
   top: 25px;
   border-radius: 2px;
@@ -130,4 +137,46 @@ html{
 }
 .select-input__link:hover{
   color: var(--primary-color);
+}
+.home-filter__page{
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.home-filter__page-num{
+  font-size: 1.5rem;
+  color: var(--text-color);
+  margin-right: 22px;
+}
+.home-filter__page-current{
+  color: var(--primary-color);
+  
+}
+.home-filter__page-control{
+  border-radius: 2px;
+  overflow: hidden;
+  display: flex;
+  width: 72px;
+  height: 36px;
+}
+.home-filter__page-btn{
+  flex: 1;
+  display: flex;
+  text-decoration: none;
+  background-color: var(--write-color);
+}
+.home-filter__page-btn-disabled{
+  background-color: #f9f9f9;
+  cursor: default;
+}
+.home-filter__page-btn-disabled .home-filter__page-icon{
+  color: #ccc;
+}
+.home-filter__page-btn:first-child{
+  border-right: 1px solid #eee;
+}
+.home-filter__page-icon{
+  margin: auto;
+  font-size: 1.4rem;
+  color: #555;
 }
