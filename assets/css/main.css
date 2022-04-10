@@ -60,7 +60,7 @@
 .header__navbar-user-menu{
   position: absolute;
   padding-left:  0px;
-  top: calc(100% + 4px);
+  top: calc(100% + 6px);
   width: 160px;
   z-index: 1 ;
   right: 0;
@@ -118,6 +118,7 @@
 }
 .header__navbar-item--has-qr:hover .header__qr{
   display: block;
+  z-index: 1;
 }
 .header__navbar-item--strong{
   font-weight: 300;
@@ -155,11 +156,12 @@
   background-color: var(--write-color);
   position: absolute;
   left: 0;
-  top: 118%;
+  top: 100%;
   padding: 8px;
   border-radius: 2px;
   display: none;
   animation: fadeIn ease-in .5s;
+  box-shadow: 0 1px 2px rgba(0, 0, 0,0.1);
 }
 /* cầu giả để nhần ra ngoài hover */
 .header__qr::before{
@@ -483,6 +485,7 @@
   display: none;
   cursor: default;
   animation: fadeIn ease-in .2s;
+  z-index: 1;
 }
 
 .header__cart-heading{
@@ -495,6 +498,8 @@
 .header__cart-list-item{
   padding-left: 0;
   list-style: none;
+  height: 56vh;
+  overflow-y: auto;
 }
 .header__cart-item{
   display: flex;
@@ -520,10 +525,18 @@
   justify-content: space-between;
 }
 .header__cart-item-name{
+  line-height: 2rem;
+  max-height: 4rem;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  text-align: left;
   font-size: 1.4rem;
   font-weight: 500;
   color: var(--text-color);
   margin: 0;
+  padding-right: 16px;
 }
 .header__cart-item-price{
   font-size: 1.4rem;
@@ -672,7 +685,7 @@
   border-radius: 2px;
   display: none;
   animation: fadeIn ease-in 0.2s;
-
+  z-index: 1;
 }
 .header__search-option::after{
   content: "";
@@ -725,6 +738,7 @@
   box-shadow: 0 1px 5px #999;
   display: none;
   overflow: hidden;
+  z-index: 1;
 }
 .header__search-history-heading{
   margin: 6px 12px;
@@ -768,50 +782,43 @@
   background-color: var(--write-color);
 }
 .category__heading{
-  font-size: 1.7rem;
+  font-size: 1.5rem;
+  font-weight: 400;
   color: var(--text-color);
-  padding: 12px 16px;
+  padding: 16px 16px 0;
   margin-top: 0;
-  border-bottom: 1px solid rgba(0, 0, 0,0.05);
-}
-.category__heading-icon{
-  font-size: 1.4rem;
-  margin-right: 4px;
-  position: relative;
-  top: -1px
+  text-transform: uppercase;
 }
 .category-list{ 
   padding: 0 0 8px 0;
   list-style: none;
-  margin-left: 9px;
 }
 .category-item{
-
+  position: relative;
+}
+.category-item:first-child:before{
+  display: none;
+}
+.category-item::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 20px;
+  right: 20px;
+  border-top: 1px solid #e1e1e1;
 }
 .category-item--active .category-item__link{ 
   color: var(--primary-color);
-}
-.category-item--active .category-item__link::before{ 
-  content: "";
-  position: absolute;
-  left: 8px;
-  top: 50%;
-  transform: translateY(-50%);
-  border: 4px solid;
-  border-color: transparent transparent transparent var(--primary-color) ;
 }
 .category-item__link{
   position: relative;
   text-decoration: none;
   color: var(--text-color);
-  font-size: 1.5rem;
-  padding: 8px 16px;
+  font-size: 1.4rem;
+  padding: 6px 20px;
   display: block;
-  transition: right linear .1s;
-  right: 0;
 }
 .category-item__link:hover{
-  right: -4px;
   color: var(--primary-color);
 }
 
@@ -835,27 +842,31 @@
 .home-filter__btn{
   margin-right: 12px;
 }
-.select-input__label{
-  font-size: 1.4rem;
-}
-.select-input__icon{
-  color: rgb(131, 131, 131);
-  font-size: 1.4rem;
-  margin: 0 16px 0 18px;
-  position: relative;
-  top: 1px;
-}
 /* prrodcut item */
+.home-product{
+  margin-bottom: 10px;
+}
 .home-product-item{
+  display: block;
+  text-decoration: none;
   background-color: var(--write-color);
   margin-top: 10px;
   position: relative;
+  border-radius: 2px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0,0.1);
+  transition: transform linear .1s;
+}
+.home-product-item:hover{
+  box-shadow: 0 1px 20px 0 rgba(0, 0, 0,0.05);
+  transform: translateY(-2px);
 }
 .home-product-item__img{
   padding-top: 100%;
   background-repeat: no-repeat ;
   background-size: contain ;
-  background-position: center;
+  background-position:top center;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
 }
 .home-product-item__name{
   font-size: 1.4rem;
@@ -977,6 +988,17 @@ i.home-product-item__like-icon-fill{
   height: 36px;
   text-align: center;
   background-color: rgb(255, 216, 64,0.94);
+  border-top-right-radius: 2px;
+}
+.home-product-item__sale-off::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  border-width: 0 20px 4px;
+  border-style: solid;
+  color: rgb(255, 216, 64,0.94);
+  border-color: transparent currentColor transparent currentColor;
 }
 .home-product-item__sale-off-percent{
   color: #ee4d2d;
