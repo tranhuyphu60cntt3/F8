@@ -1016,3 +1016,6 @@ i.home-product-item__like-icon-fill{
   position: relative;
   color: var(--write-color);
 }
+.home-product__pagination{
+  margin: 48px 0;
+}
