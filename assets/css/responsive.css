@@ -1,0 +1,26 @@
+/* moblie va tablet*/
+@media (max-width: 1023px) {
+  :root{
+    --header-heigth: 120px;
+    --navbar-height: 0; 
+  }
+  .hide-on-m-t{
+    display: none;
+  }
+}
+/* tablet */
+@media (min-width: 740px) and (max-width: 1023px){
+  .hide-on-t{
+    display: none;
+  }
+  .header__cart{
+    width: 80px;
+    text-align: right;
+  }
+}
+/* movlie */
+@media (max-width: 739px) {
+  .hide-on-m{
+    display: none;
+  }
+}
