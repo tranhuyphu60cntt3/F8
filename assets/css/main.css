@@ -579,8 +579,6 @@
 .header__cart-view-cart:hover{
   background-color: #f05d41;
 } 
-
-
 .header__cart-list::after{
   position: absolute;
   content: "";

@@ -1,10 +1,30 @@
 /* moblie va tablet*/
 @media (max-width: 1023px) {
   :root{
-    --header-heigth: 120px;
+    --header-heigth: 54px;
     --navbar-height: 0; 
   }
   .hide-on-m-t{
+    display: none;
+  }
+  .header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+  }
+  .app__container{
+    margin-top: var(--header-heigth);
+  }
+  .header__cart-list{
+    position: fixed;
+    top: var(--header-heigth);
+    right: 0;
+    width: 100%;
+    padding: 0 calc((100% - 644px)/2);
+  }
+  .header__cart-list::after{
     display: none;
   }
 }

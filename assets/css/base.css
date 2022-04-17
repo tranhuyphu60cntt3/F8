@@ -6,8 +6,8 @@
   --boder-color: #bdbdbd;
   --start-gold-color: #ffce3e;
 
-  --header-heigth: 120px;
-  --navbar-height: 34px; 
+  --header-heigth: 100px;
+  --navbar-height: 36px; 
   --header-with-search-heigth: calc(var(--header-heigth) - var(--navbar-height));
 }
 *{
