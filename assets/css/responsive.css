@@ -1,7 +1,7 @@
 /* moblie va tablet*/
 @media (max-width: 1023px) {
   :root{
-    --header-heigth: 54px;
+    --header-height: 54px;
     --navbar-height: 0; 
   }
   .hide-on-m-t{
@@ -15,17 +15,20 @@
     z-index: 1;
   }
   .app__container{
-    margin-top: var(--header-heigth);
+    margin-top: calc(var(--header-height) + var(--header-sort-bar-height)) ;
   }
   .header__cart-list{
     position: fixed;
-    top: var(--header-heigth);
+    top: var(--header-height);
     right: 0;
     width: 100%;
     padding: 0 calc((100% - 644px)/2);
   }
   .header__cart-list::after{
     display: none;
+  }
+  .header__sort-bar{
+    display: flex;
   }
 }
 /* tablet */
@@ -37,6 +40,7 @@
     width: 80px;
     text-align: right;
   }
+  
 }
 /* movlie */
 @media (max-width: 739px) {
