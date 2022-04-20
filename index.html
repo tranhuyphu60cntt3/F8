@@ -126,6 +126,10 @@
         </nav>
         <!-- header with search -->
         <div class="header-with-search">
+          <label for="mobile-search-checkbox" class="header__mobile-search">
+            <i class="header__mobile-search-icon fas fa-search"></i>
+          </label>
+
           <div class="header__logo hide-on-t">
             <a href="/" class="header__logo-link">
               <svg class="header__logo-img" viewBox="0 0 192 65" class="shopee-svg-icon header-with-search__shopee-logo icon-shopee-logo">
@@ -138,7 +142,9 @@
             </a>
           </div>
 
-          <div class="header__search">
+          <input type="checkbox" hidden id="mobile-search-checkbox" class="header__search-checkbox">
+
+          <div class="header__search ">
             <div class="header__search-input-wrap">
               <input type="text" class="header__search-input" placeholder="Nhập để tìm kiếm sản phẩm">
               <div class="header__search-history">
@@ -406,9 +412,9 @@
     </header>
     <div class="app__container">
       <div class="grid wide">
-        <div class="grid__row app__content">
+        <div class="row sm-gutter app__content">
 
-          <div class="grid__column-2  ">
+          <div class="col l-2 m-0 c-0">
             <nav class="category">
               <h3 class="category__heading">Danh mục</h3>
       
@@ -426,7 +432,7 @@
             </nav>
           </div>
   
-          <div class="grid__column-10  ">
+          <div class="col l-10 m-12 c-12">
             <div class="home-filter hide-on-m-t">
               <span class="home-filter__label">Sắp xếp theo</span>
               <button class="home-filter__btn btn">Phổ biến</button>
@@ -465,8 +471,8 @@
             </div>
 
             <div class="home-product">
-              <div class="grid__row">
-                <div class="grid__column-2-4">
+              <div class="row sm-gutter">
+                <div class="col l-2-4 m-4 c-6">
                   <!-- product item -->
                   <a class="home-product-item" href="#">
                     <div class="home-product-item__img" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuH9sIFd42RO6c8eiCikVZNQI5GumgEF-DfQ&usqp=CAU);"> </div>
@@ -504,7 +510,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="grid__column-2-4">
+                <div class="col l-2-4 m-4 c-6">
                   <!-- product item -->
                   <a class="home-product-item" href="#">
                     <div class="home-product-item__img" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuH9sIFd42RO6c8eiCikVZNQI5GumgEF-DfQ&usqp=CAU);"> </div>
@@ -542,7 +548,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="grid__column-2-4">
+                <div class="col l-2-4 m-4 c-6">
                   <!-- product item -->
                   <a class="home-product-item" href="#">
                     <div class="home-product-item__img" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuH9sIFd42RO6c8eiCikVZNQI5GumgEF-DfQ&usqp=CAU);"> </div>
@@ -580,7 +586,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="grid__column-2-4">
+                <div class="col l-2-4 m-4 c-6">
                   <!-- product item -->
                   <a class="home-product-item" href="#">
                     <div class="home-product-item__img" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuH9sIFd42RO6c8eiCikVZNQI5GumgEF-DfQ&usqp=CAU);"> </div>
@@ -618,7 +624,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="grid__column-2-4">
+                <div class="col l-2-4 m-4 c-6">
                   <!-- product item -->
                   <a class="home-product-item" href="#">
                     <div class="home-product-item__img" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuH9sIFd42RO6c8eiCikVZNQI5GumgEF-DfQ&usqp=CAU);"> </div>
@@ -656,7 +662,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="grid__column-2-4">
+                <div class="col l-2-4 m-4 c-6">
                   <!-- product item -->
                   <a class="home-product-item" href="#">
                     <div class="home-product-item__img" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuH9sIFd42RO6c8eiCikVZNQI5GumgEF-DfQ&usqp=CAU);"> </div>
@@ -694,7 +700,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="grid__column-2-4">
+                <div class="col l-2-4 m-4 c-6">
                   <!-- product item -->
                   <a class="home-product-item" href="#">
                     <div class="home-product-item__img" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuH9sIFd42RO6c8eiCikVZNQI5GumgEF-DfQ&usqp=CAU);"> </div>
@@ -732,7 +738,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="grid__column-2-4">
+                <div class="col l-2-4 m-4 c-6">
                   <!-- product item -->
                   <a class="home-product-item" href="#">
                     <div class="home-product-item__img" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuH9sIFd42RO6c8eiCikVZNQI5GumgEF-DfQ&usqp=CAU);"> </div>
@@ -770,7 +776,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="grid__column-2-4">
+                <div class="col l-2-4 m-4 c-6">
                   <!-- product item -->
                   <a class="home-product-item" href="#">
                     <div class="home-product-item__img" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuH9sIFd42RO6c8eiCikVZNQI5GumgEF-DfQ&usqp=CAU);"> </div>
@@ -808,7 +814,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="grid__column-2-4">
+                <div class="col l-2-4 m-4 c-6">
                   <!-- product item -->
                   <a class="home-product-item" href="#">
                     <div class="home-product-item__img" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuH9sIFd42RO6c8eiCikVZNQI5GumgEF-DfQ&usqp=CAU);"> </div>
@@ -846,7 +852,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="grid__column-2-4">
+                <div class="col l-2-4 m-4 c-6">
                   <!-- product item -->
                   <a class="home-product-item" href="#">
                     <div class="home-product-item__img" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuH9sIFd42RO6c8eiCikVZNQI5GumgEF-DfQ&usqp=CAU);"> </div>
@@ -884,7 +890,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="grid__column-2-4">
+                <div class="col l-2-4 m-4 c-6">
                   <!-- product item -->
                   <a class="home-product-item" href="#">
                     <div class="home-product-item__img" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuH9sIFd42RO6c8eiCikVZNQI5GumgEF-DfQ&usqp=CAU);"> </div>
@@ -922,7 +928,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="grid__column-2-4">
+                <div class="col l-2-4 m-4 c-6">
                   <!-- product item -->
                   <a class="home-product-item" href="#">
                     <div class="home-product-item__img" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuH9sIFd42RO6c8eiCikVZNQI5GumgEF-DfQ&usqp=CAU);"> </div>
@@ -960,7 +966,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="grid__column-2-4">
+                <div class="col l-2-4 m-4 c-6">
                   <!-- product item -->
                   <a class="home-product-item" href="#">
                     <div class="home-product-item__img" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuH9sIFd42RO6c8eiCikVZNQI5GumgEF-DfQ&usqp=CAU);"> </div>
@@ -998,7 +1004,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="grid__column-2-4">
+                <div class="col l-2-4 m-4 c-6">
                   <!-- product item -->
                   <a class="home-product-item" href="#">
                     <div class="home-product-item__img" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuH9sIFd42RO6c8eiCikVZNQI5GumgEF-DfQ&usqp=CAU);"> </div>
@@ -1036,7 +1042,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="grid__column-2-4">
+                <div class="col l-2-4 m-4 c-6">
                   <!-- product item -->
                   <a class="home-product-item" href="#">
                     <div class="home-product-item__img" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuH9sIFd42RO6c8eiCikVZNQI5GumgEF-DfQ&usqp=CAU);"> </div>
@@ -1074,7 +1080,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="grid__column-2-4">
+                <div class="col l-2-4 m-4 c-6">
                   <!-- product item -->
                   <a class="home-product-item" href="#">
                     <div class="home-product-item__img" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuH9sIFd42RO6c8eiCikVZNQI5GumgEF-DfQ&usqp=CAU);"> </div>
@@ -1112,7 +1118,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="grid__column-2-4">
+                <div class="col l-2-4 m-4 c-6">
                   <!-- product item -->
                   <a class="home-product-item" href="#">
                     <div class="home-product-item__img" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuH9sIFd42RO6c8eiCikVZNQI5GumgEF-DfQ&usqp=CAU);"> </div>
@@ -1195,9 +1201,9 @@
     </div>
     <footer class="footer">
       <div class="grid wide">
-        <div class="grid__row">
+        <div class="row">
 
-          <div class="grid__column-2-4">
+          <div class="col l-2-4 m-4 c-6">
             <h3 class="footer_heading">Chăm sóc khách hàng</h3>
             <ul class="footer-list">
               <li class="footer-item">
@@ -1211,7 +1217,7 @@
               </li>
             </ul>
           </div>
-          <div class="grid__column-2-4">
+          <div class="col l-2-4 m-4 c-6">
             <h3 class="footer_heading">Giới thiệu</h3>
             <ul class="footer-list">
               <li class="footer-item">
@@ -1225,7 +1231,7 @@
               </li>
             </ul>
           </div>
-          <div class="grid__column-2-4">
+          <div class="col l-2-4 m-4 c-6">
             <h3 class="footer_heading">Danh mục</h3>
             <ul class="footer-list">
               <li class="footer-item">
@@ -1239,7 +1245,7 @@
               </li>
             </ul>
           </div>
-          <div class="grid__column-2-4">
+          <div class="col l-2-4 m-4 c-6">
             <h3 class="footer_heading">Theo dõi</h3>
             <ul class="footer-list">
               <li class="footer-item">
@@ -1262,7 +1268,7 @@
               </li>
             </ul>
           </div>
-          <div class="grid__column-2-4">
+          <div class="col l-2-4 m-4 c-6">
             <h3 class="footer_heading">Vào cửa hàng trong ứng dụng</h3>
             <div class="footer__download">
               <img class="footer__download-qr" src="./assets/img/qr_code.png" alt="Download QR">

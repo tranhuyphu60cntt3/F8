@@ -1,3 +1,6 @@
+.app{
+  overflow: hidden;
+}
 .header{
   height: var(--header-height);
   background-image:linear-gradient(0, #fe6433, #f53e2d) ;
@@ -429,12 +432,19 @@
 .auth-form__help-forgot{
   color: var(--primary-color);
 }
-/* header ưith search */
+/* header with search */
 .header-with-search{
   height: var(--header-with-search-heigth );
   display: flex;
   align-items: center;
   margin: 0 8px;
+}
+.header__mobile-search{
+  padding: 0 12px;
+}
+.header__mobile-search-icon{
+  font-size: 2.6rem;
+  color: var(--write-color);  
 }
 .header__logo{
   width: 200px;
@@ -442,6 +452,11 @@
 .header__logo-link{
   color: transparent;
   text-decoration: none;
+  display: block;
+  line-height: 0;
+}
+.header__search-checkbox:checked ~ .header__search{
+  display: flex;
 }
 .header__logo-img{
   width: 150px;
@@ -1017,7 +1032,8 @@ i.home-product-item__like-icon-fill{
   color: var(--write-color);
 }
 .home-product__pagination{
-  margin: 48px 0;
+  margin: 48px 0 32px 0;
+  padding-left: 0;
 }
 /*  */
 .header__sort-bar{
