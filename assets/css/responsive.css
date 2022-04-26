@@ -1,7 +1,7 @@
 /* moblie va tablet*/
 @media (max-width: 1023px) {
   :root{
-    --header-height: 54px;
+    --header-height: 68px;
     --navbar-height: 0; 
   }
   .hide-on-m-t{
@@ -47,8 +47,12 @@
     padding-top: 8px;
   }
 }
-/* movlie */
+/* moblie */
 @media (max-width: 739px) {
+  :root{
+    --header-height: 54px;
+    --navbar-height: 0; 
+  }
   .hide-on-m{
     display: none;
   }
@@ -115,5 +119,22 @@
   }
   .footer__content{
     padding: 0 16px;
+  }
+  .footer__header{
+    text-align: center;
+  }
+  .footer__download,
+  .footer-item__link{
+    justify-content: center;
+  }
+  .footer__download-apps{
+    flex: unset;
+  }
+  .footer__download-app-link{
+    display: block;
+    padding: 6px 8px;
+  }
+  .mobile-category{
+    padding-top: 24px;
   }
 }
