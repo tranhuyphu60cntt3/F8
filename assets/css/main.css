@@ -441,6 +441,7 @@
 }
 .header__mobile-search{
   padding: 0 12px;
+  display: none;
 }
 .header__mobile-search-icon{
   font-size: 2.6rem;
@@ -481,6 +482,8 @@
   display: inline;
   padding: 0 8px;
   cursor: pointer;
+
+  -webkit-tap-highlight-color: transparent;
 }
 .header__cart-wrap:hover .header__cart-list{
   display: block;
@@ -835,6 +838,58 @@
 }
 .category-item__link:hover{
   color: var(--primary-color);
+}
+
+/* mobile catgory */
+.mobile-category{
+  display: none;
+}
+.mobile-category__list{
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  max-width: 100%;
+  overflow-x: auto;
+}
+.mobile-category__list::-webkit-scrollbar{
+  display: none;
+}
+
+.mobile-category__item{
+  flex-shrink: 0;
+  margin-right: 10px;
+}
+.mobile-category__item:nth-of-type(3n+1) .mobile-category__link{
+  background-color: #87afd8;
+}
+.mobile-category__item:nth-of-type(3n+2) .mobile-category__link{
+  background-color: #76c9bd;
+}
+.mobile-category__item:nth-of-type(3n+3) .mobile-category__link{
+  background-color: #88cf81;
+}
+.mobile-category__link{
+  --line-height: 2rem;
+  text-decoration: none;
+  color: var(--write-color);
+  font-size: 1.4rem;
+  line-height: var(--line-height);
+  height: calc(var(--line-height) * 2) ;
+  overflow: hidden;  
+  text-align: center;
+  width: 110px;
+  height: 40px;
+  display: block;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  border-radius: 4px;
+  font-weight: 300;
+/* chữ k bị bôi đen */
+  user-select: none;
+  -webkit-user-select: none;
+  padding: 0 6px;
 }
 
 /* home sort + filter */
