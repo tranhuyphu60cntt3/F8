@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+
+  
+  <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="./slick/slick.css">
+  <link rel="stylesheet" href="./slick/slick-theme.css">
+</head>
+<body>
+  <div class="nav"> 
+    <div>
+      <div id="mb-mySidenav-bg" class="mb-mySidenav-bg"> </div>
+      <div id="mb-mb-mySidenav-filter" class="mb-mb-mySidenav-filter ">
+        <div class="">
+          <span class="fw-bolder" style="font-size:30px;cursor:pointer" onclick="mb_openNav()">
+            <div id="cart" title="Giỏ hàng" class=" p-4" href="">
+              <div class="cart-mb cart gio">
+                <p>1</p>
+                <div class="o"></div>
+                
+              </div>
+            </div>
+          </span>
+        </div>
+      </div>
+      <div id="mb-mySidenav" class="mb-mySidenav overflow-auto">
+        <a id="mb-mySidenav-close" href="javascript:void(0)" class="mb-mySidenav-close" onclick="mb_closeNav()">&times;</a>
+        <div class="cart-header_gio-mb text-center">
+          <div class="p-3 d-flex justify-content-center">
+            <table class="table-cart">
+              <tr>
+                <td colspan="3">
+                  <p style="color: #cbba9c;">Tổng phụ: <b style="color: #000;">14,619,000 ₫</b></p> 
+                </td>
+              </tr>
+              <tr>
+                <td colspan="3">
+                  <a href="./cart.html" class="update text-light text-center d-block p-2">
+                    XEM GIỎ HÀNG
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="3">
+                  <a href="./thanhtoan.html" class="thanhtoan text-center text-light d-block p-2">
+                    THANH TOÁN
+                  </a>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  function mb_openNav() {
+    document.getElementById("mb-mySidenav").style.width = "260px";
+    document.getElementById("mb-mySidenav-bg").style.width = "100%";
+    // document.getElementById("mb-mb-mySidenav-filter").style.display = "none";
+    document.getElementById("mb-mySidenav-close").style.display = "block";
+  }
+  
+  function mb_closeNav() {
+    document.getElementById("mb-mySidenav").style.width = "0%";
+    document.getElementById("mb-mySidenav-bg").style.width = "0%";
+    // document.getElementById("mb-mb-mySidenav-filter").style.display = "block";
+    document.getElementById("mb-mySidenav-close").style.display = "none";
+  }
+  </script>
+  <script src="./slick/slick.min.js"></script>
+  <script src="./slick/slick.js"></script>
+  <script src="./bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,1 @@
+alert("Hi javascrip nasic")

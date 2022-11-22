@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AAC</title>
+  <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <script src="./jquery/jquery-3.6.0.min.js"></script>
+  <script src="./jquery/jquery-migrate-3.3.2.min.js"></script>
+
+</head>
+<body>
+<main>
+  <div class="clearfix position-relative" style="width: 100%;">
+    <section style="background-color: #F9F9F9;" class="menu-tab w-100">
+      <ul class="d-flex justify-content-center">
+        <li class="my-1"><a class="py-2 activ" href="#one" >Flight Support</a></li>
+        <li class="my-1"><a class="py-2" href="#two">Executive travel</a></li>
+        <li class="my-1"><a class="py-2" href="#three">Air Freight Services</a></li>
+      </ul>
+    </section>
+    <section class="tab-content w-100" >
+      <div class="content activ" id="one">
+        <div class="img-about img-bg">
+          <div class="title">
+            About Us
+            <div class="d-flex justify-content-center">
+              <img class="icon-home" src="/imgs/home/home.png" alt="">
+              <div class="ps-2 breadcrumbs">  ⎯   About Us</div>
+            </div>
+          </div> 
+        </div>
+      </div>
+      <div class="content" id="two">
+        <div style="height: 100px;" class="w-100">
+          two
+        </div>
+      </div>
+      <div class="content" id="three">
+        <div style="height: 100px;" class="w-100">
+          three
+        </div>
+      </div>
+    </section>
+    
+  </div>
+ 
+</main>
+  <script src="./bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+<!-- nav-tab -->
+<script>
+var links = document.querySelectorAll('section.menu-tab ul li a');
+var content = document.querySelectorAll('div.content');
+var lis = document.querySelectorAll('section.menu-tab ul li');
+
+for (let i = 0; i < links.length; i++){
+	links[i].addEventListener('click', function(e){
+    e.preventDefault();
+		var activLinks = document.querySelector('section.menu-tab ul li a.activ');
+		var activContent = document.querySelector('.tab-content>div.activ');
+
+		activLinks.classList.remove('activ');
+		activContent.classList.remove('activ');
+
+		this.classList.add('activ');
+		var attr = this.getAttribute('href');
+
+		var activ = document.querySelector(attr);
+
+		activ.classList.add('activ');
+      var lisLength = lis.length;
+      var lisWidth = 100 / lisLength;
+      var position = i*lisWidth;
+	});
+}
+</script>
+</body>
+</html>
